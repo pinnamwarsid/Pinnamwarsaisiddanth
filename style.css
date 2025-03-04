@@ -1,6 +1,6 @@
-/* Gradient Background */
+/* Dark Gradient Background */
 .bg-gradient-to-r {
-    background: linear-gradient(135deg, #121723, #0D9488);
+    background: linear-gradient(135deg, #1D4ED8, #0D9488);
 }
 
 /* Smooth Scrolling */
@@ -8,12 +8,60 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Hover Effects */
+/* Hover Effects with Transitions */
 .hover\:scale-105:hover {
     transform: scale(1.05);
+    transition: transform 0.3s ease; /* Added smooth transition */
 }
 
 /* Focus States */
 .focus\:ring-2:focus {
     box-shadow: 0 0 0 2px rgba(30, 64, 175, 0.5);
+}
+
+/* Dark Mode Adjustments */
+.dark .bg-gradient-to-r {
+    background: linear-gradient(135deg, #0F172A, #1E293B);
+}
+
+.dark body {
+    color: white;
+}
+
+/* Card Glow on Hover */
+.hover-glow:hover {
+    box-shadow: 0 0 15px rgba(30, 64, 175, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Section Headers with Gradient */
+.gradient-header {
+    background: linear-gradient(135deg, #1D4ED8, #0D9488);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Animated Underline for Links */
+.animate-underline:hover {
+    position: relative;
+}
+
+.animate-underline:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(135deg, #1D4ED8, #0D9488);
+    bottom: -4px;
+    left: 0;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
