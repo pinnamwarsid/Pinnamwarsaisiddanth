@@ -4,258 +4,365 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sai Siddanth Pinnamwar - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #1D4ED8, #0D9488);
-        }
-        .hover-glow:hover {
-            box-shadow: 0 0 15px rgba(30, 64, 175, 0.5);
-        }
-        .skill-card:hover {
-            transform: translateY(-5px);
-            transition: transform 0.3s ease;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900 text-white">
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
     <!-- Navbar -->
-    <nav class="py-6 px-4 md:px-20 bg-gray-800">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold text-blue-400">Siddanth</h1>
-            <ul class="flex space-x-6">
-                <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
-                <li><a href="#skills" class="hover:text-blue-400 transition">Skills</a></li>
-                <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
-                <li><a href="#internships" class="hover:text-blue-400 transition">Internships</a></li>
-                <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
-            </ul>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="#" class="logo">Siddanth</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#internships" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="min-h-screen gradient-bg flex items-center justify-center">
-        <div class="max-w-6xl mx-auto px-4 md:px-20 text-center">
-            <img src="assets/profile.gif.jpg" alt="Profile" class="rounded-full w-48 h-48 mx-auto mb-8 border-4 border-white shadow-lg">
-            <h1 class="text-5xl font-bold mb-4">Sai Siddanth Pinnamwar</h1>
-            <p class="text-xl mb-8">Data-Driven Developer | Python & SQL Enthusiast</p>
-            <div class="flex justify-center space-x-6">
-                <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition">Contact Me</a>
-                <a href="https://drive.google.com/file/d/1cpYaRqvtA_fbgUWLAhsRPQg4jBnabYmu/view?usp=sharing" target="_blank" class="bg-transparent border-2 border-white px-6 py-3 rounded-full hover:bg-white hover:text-blue-600 transition">Resume</a>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Sai Siddanth Pinnamwar</h1>
+            <p class="hero-subtitle">Data-Driven Developer | Python & SQL Enthusiast</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="https://drive.google.com/file/d/1cpYaRqvtA_fbgUWLAhsRPQg4jBnabYmu/view?usp=sharing" target="_blank" class="btn btn-secondary">Download Resume</a>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 px-4 md:px-20 bg-gray-800" data-aos="fade-up" data-aos-duration="1000">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-                <h2 class="text-3xl font-bold text-gray-200 mb-4">About Me</h2>
-                <p class="text-gray-400">
-                    Innovative Computer Science Engineer with a strong foundation in data analysis, AI, and digital marketing. Proficient in Python, SQL, and data visualization tools. Experienced in developing interactive dashboards and AI-powered systems. Currently pursuing a Bachelor’s in Computer Science. Skilled in problem-solving and delivering user-centric solutions. Passionate about leveraging technology to drive innovation and efficiency.
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="about-title">About Me</h2>
+                <p class="about-description">
+                    Innovative Computer Science Engineer with a strong foundation in data analysis, AI, and digital marketing. Proficient in Python, SQL, and data visualization tools. Experienced in developing interactive dashboards and AI-powered systems. Currently pursuing a Bachelor's in Computer Science. Skilled in problem-solving and delivering user-centric solutions. Passionate about leveraging technology to drive innovation and efficiency.
                 </p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">7.66</div>
+                        <div class="stat-label">CGPA (Till VI SEM) </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2025</div>
+                        <div class="stat-label">Graduation Year</div>
+                    </div>
+                </div>
             </div>
-            <div class="space-y-4">
-                <div class="flex items-center space-x-4">
-                    <span class="text-blue-400 text-2xl">🎓</span>
-                    <div>
-                        <h3 class="font-semibold text-gray-200">Education</h3>
-                        <p class="text-gray-400">B.Tech in CSE (2025) | CGPA: 7.66</p>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <span class="text-blue-400 text-2xl">📍</span>
-                    <div>
-                        <h3 class="font-semibold text-gray-200">Location</h3>
-                        <p class="text-gray-400">Hyderabad, India</p>
-                    </div>
-                </div>
+            <div class="about-image">
+                <img src="assets/profile.gif.jpg" alt="Profile" class="floating">
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 px-4 md:px-20 bg-gray-900">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-gray-200 mb-8">Technical Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="p-4 bg-gray-800 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-200">Python</h3>
-                    <div class="w-full bg-gray-700 h-2 rounded-full mt-2">
-                        <div class="bg-blue-400 h-2 rounded-full" style="width: 95%"></div>
-                    </div>
-                </div>
-                <div class="p-4 bg-gray-800 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-200">SQL</h3>
-                    <div class="w-full bg-gray-700 h-2 rounded-full mt-2">
-                        <div class="bg-blue-400 h-2 rounded-full" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="p-4 bg-gray-800 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-200">Excel</h3>
-                    <div class="w-full bg-gray-700 h-2 rounded-full mt-2">
-                        <div class="bg-blue-400 h-2 rounded-full" style="width: 85%"></div>
-                    </div>
-                </div>
-                <!-- Add more skills -->
-                <div class="p-4 bg-gray-800 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-200">Power BI</h3>
-                    <div class="w-full bg-gray-700 h-2 rounded-full mt-2">
-                        <div class="bg-blue-400 h-2 rounded-full" style="width: 85%"></div>
-                 </div>
-                </div>
-                <!-- Add more skills -->
-                <div class="p-4 bg-gray-800 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-200">Python Libraries & Frameworks</h3>
-                    <div class="w-full bg-gray-700 h-2 rounded-full mt-2">
-                        <div class="bg-blue-400 h-2 rounded-full" style="width: 85%"></div>
-                 </div>
-                </div>
-                <!-- Add more skills -->
-                <div class="p-4 bg-gray-800 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-200">GitHub</h3>
-                    <div class="w-full bg-gray-700 h-2 rounded-full mt-2">
-                        <div class="bg-blue-400 h-2 rounded-full" style="width: 85%"></div>
-                 </div>
-                 
-            </div>
-        </div>
-    </section>
     <!-- Projects Section -->
-    <section id="projects" class="py-20 px-4 md:px-20 bg-gray-800" data-aos="fade-up" data-aos-duration="1000">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-gray-200 mb-8 gradient-bg inline-block px-4 py-2 rounded-lg">Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section id="projects" class="projects">
+        <div class="projects-content">
+            <h2 class="projects-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Advanced Customer Segmentation -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Data Analysis Project" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/pinnamwarsid/Customer-Segmentation-Analysis.git" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Advanced Customer Segmentation</h3>
+                        <p class="project-description">
+                            Developed an advanced customer segmentation system using Python, implementing RFM analysis and K-means clustering to identify distinct customer segments.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Smart Traffic Surveillance -->
-                <div class="bg-gray-900 p-6 rounded-lg hover:scale-105 transition shadow-lg hover-glow" data-aos="fade-up">
-                    <img src="assets/traffic.jpg" alt="Traffic Project" class="rounded-lg mb-4">
-                    <h3 class="text-xl font-bold mb-2 text-gray-200">Smart Traffic Surveillance</h3>
-                    <p class="text-gray-400 mb-4">AI-powered helmet detection and license plate recognition.</p>
-                    <div class="flex space-x-2 mb-4">
-                        <span class="bg-blue-400 text-gray-900 px-2 py-1 rounded">Python</span>
-                        <span class="bg-blue-400 text-gray-900 px-2 py-1 rounded">OpenCV</span>
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Traffic Project" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/pinnamwarsid/Smart-Traffic-Surveillance" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <a href="https://github.com/pinnamwarsid/Smart-Traffic-Surveillance" target="_blank" class="text-blue-400 hover:text-blue-300 transition">View on GitHub</a>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Traffic Surveillance</h3>
+                        <p class="project-description">
+                            AI-powered helmet detection and license plate recognition system for enhanced traffic monitoring.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">OpenCV</span>
+                            <span class="project-tag">AI</span>
+                        </div>
+                    </div>
                 </div>
+
                 <!-- Interactive Data Dashboard -->
-                <div class="bg-gray-900 p-6 rounded-lg hover:scale-105 transition shadow-lg hover-glow" data-aos="fade-up">
-                    <img src="assets/dashboard.jpg" alt="Dashboard" class="rounded-lg mb-4">
-                    <h3 class="text-xl font-bold mb-2 text-gray-200">Interactive Data Dashboard</h3>
-                    <p class="text-gray-400 mb-4">Flask + Plotly for real-time data visualization.</p>
-                    <div class="flex space-x-2 mb-4">
-                        <span class="bg-blue-400 text-gray-900 px-2 py-1 rounded">Flask</span>
-                        <span class="bg-blue-400 text-gray-900 px-2 py-1 rounded">SQL</span>
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dashboard" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/pinnamwarsid/Data_analysis_dashboard.git" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <a href="https://github.com/pinnamwarsid/Data-Dashboard" target="_blank" class="text-blue-400 hover:text-blue-300 transition">View on GitHub</a>
+                    <div class="project-content">
+                        <h3 class="project-title">Interactive Data Dashboard</h3>
+                        <p class="project-description">
+                            Real-time data visualization dashboard built with Flask and Plotly for dynamic data analysis.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">Plotly</span>
+                            <span class="project-tag">SQL</span>
+                        </div>
+                    </div>
                 </div>
+
                 <!-- Retail Sales Forecasting -->
-                <div class="bg-gray-900 p-6 rounded-lg hover:scale-105 transition shadow-lg hover-glow" data-aos="fade-up">
-                    <img src="assets/sales.jpg" alt="Sales Analysis" class="rounded-lg mb-4">
-                    <h3 class="text-xl font-bold mb-2 text-gray-200">Retail Sales Forecasting</h3>
-                    <p class="text-gray-400 mb-4">5-year trend analysis with Tableau visualization.</p>
-                    <div class="flex space-x-2 mb-4">
-                        <span class="bg-blue-400 text-gray-900 px-2 py-1 rounded">Power BI</span>
-                        <span class="bg-blue-400 text-gray-900 px-2 py-1 rounded">Pandas</span>
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sales Analysis" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/pinnamwarsid/Retail_Sales_Forecasting" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <a href="https://github.com/pinnamwarsid/Retail_Sales_Forecasting" target="_blank" class="text-blue-400 hover:text-blue-300 transition">View on GitHub</a>
+                    <div class="project-content">
+                        <h3 class="project-title">Retail Sales Forecasting</h3>
+                        <p class="project-description">
+                            5-year trend analysis with Tableau visualization for retail sales prediction.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">Pandas</span>
+                        </div>
+                    </div>
                 </div>
+
                 <!-- E-commerce Customer Segmentation -->
-                <div class="bg-gray-900 p-6 rounded-lg hover:scale-105 transition shadow-lg hover-glow" data-aos="fade-up">
-                    <img src="assets/rfm.jpg" alt="RFM Analysis" class="rounded-lg mb-4">
-                    <h3 class="text-xl font-bold mb-2 text-gray-200">E-commerce Customer Segmentation</h3>
-                    <p class="text-gray-400 mb-4">RFM analysis + Power BI dashboard.</p>
-                    <div class="flex space-x-2 mb-4">
-                        <span class="bg-blue-400 text-gray-900 px-2 py-1 rounded">Power BI</span>
-                        <span class="bg-blue-400 text-gray-900 px-2 py-1 rounded">Excel</span>
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="RFM Analysis" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/pinnamwarsid/E-commerce-Customer-Segmentation" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <a href="https://github.com/pinnamwarsid/E-commerce-Customer-Segmentation" target="_blank" class="text-blue-400 hover:text-blue-300 transition">View on GitHub</a>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Customer Segmentation</h3>
+                        <p class="project-description">
+                            RFM analysis and Power BI dashboard for customer segmentation.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">Excel</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Internships Section -->
-    <section id="internships" class="py-20 px-4 md:px-20 bg-gray-800" data-aos="fade-up" data-aos-duration="1000">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-gray-200 mb-8 gradient-bg inline-block px-4 py-2 rounded-lg">Internships</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Product Development Intern -->
-                <div class="bg-gray-900 p-6 rounded-lg hover:scale-105 transition shadow-lg hover-glow" data-aos="fade-up">
-                    <h3 class="text-xl font-bold mb-2 text-gray-200">Data Management Intern</h3>
-                    <p class="text-gray-400 mb-4"><em>COSMIC365, Hyderabad</em> | Apr 2024 - Jun 2024</p>
-                    <ul class="text-gray-400 list-disc pl-5 space-y-2">
-                        <li><i class="fas fa-check-circle text-green-400 mr-2"></i>• Utilized Power BI and SQL to design interactive dashboards for tracking key business metrics.</li>
-                        <li><i class="fas fa-award text-yellow-400 mr-2"></i>Awarded a $600 scholarship for outstanding performance.</li>
-                        <li><i class="fas fa-globe text-blue-400 mr-2"></i>Collaborated with international teams across 32 verticals and 65 countries.</li>
-                    </ul>
+    <section id="internships" class="internships">
+        <div class="internships-content">
+            <h2 class="internships-title">Professional Experience</h2>
+            <div class="internships-grid">
+                <!-- Data Management Intern -->
+                <div class="internship-card">
+                    <div class="internship-content">
+                        <h3 class="internship-title">Data Management Intern</h3>
+                        <p class="internship-company">COSMIC365, Hyderabad</p>
+                        <p class="internship-period">Apr 2024 - Jun 2024</p>
+                        <ul class="internship-details">
+                            <li>Utilized Power BI and SQL to design interactive dashboards for tracking key business metrics</li>
+                            <li>Awarded a $600 scholarship for outstanding performance</li>
+                            <li>Collaborated with international teams across 32 verticals and 65 countries</li>
+                        </ul>
+                    </div>
                 </div>
+
                 <!-- Compiler Engineering Intern -->
-                <div class="bg-gray-900 p-6 rounded-lg hover:scale-105 transition shadow-lg hover-glow" data-aos="fade-up">
-                    <h3 class="text-xl font-bold mb-2 text-gray-200">Compiler Engineering Research Intern</h3>
-                    <p class="text-gray-400 mb-4"><em>TensorGrad, Chennai</em> | Nov 2024 - Jan 2025</p>
-                    <ul class="text-gray-400 list-disc pl-5 space-y-2">
-                        <li><i class="fas fa-code text-blue-400 mr-2"></i>Optimized data processing algorithms to enhance system performance by 30%.</li>
-                        <li><i class="fas fa-bug text-red-400 mr-2"></i>• Documented research findings and contributed to knowledge transfer through structured reports.</li>
-                        <li><i class="fas fa-book text-purple-400 mr-2"></i>Conducted quantitative analysis and implemented strategies to improve computational efficiency</li>
-                    </ul>
+                <div class="internship-card">
+                    <div class="internship-content">
+                        <h3 class="internship-title">Compiler Engineering Research Intern</h3>
+                        <p class="internship-company">TensorGrad, Chennai</p>
+                        <p class="internship-period">Nov 2024 - Jan 2025</p>
+                        <ul class="internship-details">
+                            <li>Optimized data processing algorithms to enhance system performance by 30%</li>
+                            <li>Documented research findings and contributed to knowledge transfer through structured reports</li>
+                            <li>Conducted quantitative analysis and implemented strategies to improve computational efficiency</li>
+                        </ul>
+                    </div>
                 </div>
+
                 <!-- Research Analyst -->
-                <div class="bg-gray-900 p-6 rounded-lg hover:scale-105 transition shadow-lg hover-glow" data-aos="fade-up">
-                    <h3 class="text-xl font-bold mb-2 text-gray-200">Research Analyst</h3>
-                    <p class="text-gray-400 mb-4"><em>BigBulls, Hyderabad</em> | Nov 2024 - Feb 2025</p>
-                    <ul class="text-gray-400 list-disc pl-5 space-y-2">
-                        <li><i class="fas fa-chart-line text-teal-400 mr-2"></i>Conducted financial and market research by analyzing data from 5 financial reports and 3 industry
-                            publications.
-                            </li>
-                        <li><i class="fas fa-file-alt text-gray-400 mr-2"></i>Prepared detailed research reports and visual aids.</li>
-                        <li><i class="fas fa-users text-indigo-400 mr-2"></i>Collaborated with senior analysts on market research.</li>
-                    </ul>
+                <div class="internship-card">
+                    <div class="internship-content">
+                        <h3 class="internship-title">Research Analyst</h3>
+                        <p class="internship-company">BigBulls, Hyderabad</p>
+                        <p class="internship-period">Nov 2024 - Feb 2025</p>
+                        <ul class="internship-details">
+                            <li>Conducted financial and market research by analyzing data from 5 financial reports and 3 industry publications</li>
+                            <li>Prepared detailed research reports and visual aids</li>
+                            <li>Collaborated with senior analysts on market research</li>
+                        </ul>
+                    </div>
                 </div>
+
                 <!-- Marketing Intern -->
-                <div class="bg-gray-900 p-6 rounded-lg hover:scale-105 transition shadow-lg hover-glow" data-aos="fade-up">
-                    <h3 class="text-xl font-bold mb-2 text-gray-200">Marketing Intern</h3>
-                    <p class="text-gray-400 mb-4"><em>RPA Info Tech, Hyderabad</em> | Nov 2024 - present.</p>
-                    <ul class="text-gray-400 list-disc pl-5 space-y-2">
-                        <li><i class="fas fa-chart-bar text-pink-400 mr-2"></i>Analyzed HubSpot CRM data for campaign performance.</li>
-                        <li><i class="fas fa-cogs text-green-400 mr-2"></i>Optimized lead generation strategies using engagement metrics.</li>
-                        <li><i class="fas fa-handshake text-yellow-400 mr-2"></i>Collaborated with sales teams to refine outreach strategies.</li>
-                    </ul>
+                <div class="internship-card">
+                    <div class="internship-content">
+                        <h3 class="internship-title">Marketing Intern</h3>
+                        <p class="internship-company">RPA Info Tech, Hyderabad</p>
+                        <p class="internship-period">Nov 2024 - Present</p>
+                        <ul class="internship-details">
+                            <li>Analyzed HubSpot CRM data for campaign performance</li>
+                            <li>Optimized lead generation strategies using engagement metrics</li>
+                            <li>Collaborated with sales teams to refine outreach strategies</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 px-4 md:px-20 bg-gray-900" data-aos="fade-up" data-aos-duration="1000">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-gray-200 mb-8 gradient-bg inline-block px-4 py-2 rounded-lg">Let's Connect</h2>
-            <form id="contactForm" class="max-w-2xl mx-auto space-y-4">
-                <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-white">
-                <input type="email" placeholder="Email Address" class="w-full px-4 py-3 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-white">
-                <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-3 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"></textarea>
-                <button type="submit" class="bg-blue-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition">Send Message</button>
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2 class="contact-title">Let's Connect</h2>
+            <form id="contactForm" class="contact-form">
+                <input type="text" placeholder="Your Name" class="form-input" required>
+                <input type="email" placeholder="Email Address" class="form-input" required>
+                <textarea placeholder="Your Message" class="form-input form-textarea" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
-            <div class="mt-8 flex justify-center space-x-6 text-gray-400">
-                <a href="https://www.linkedin.com/in/p-sai-siddanth-67aa81246" target="_blank" class="hover:text-blue-400 transition">LinkedIn</a>
-                <a href="https://github.com/pinnamwarsid" target="_blank" class="hover:text-blue-400 transition">GitHub</a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/p-sai-siddanth-67aa81246" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/pinnamwarsid" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-6 px-4 md:px-20 bg-gray-800 text-center text-gray-400">
-        © 2024 Sai Siddanth Pinnamwar. All rights reserved.
+    <footer class="footer">
+        <p>© 2024 Sai Siddanth Pinnamwar. All rights reserved.</p>
     </footer>
 
     <script>
-        AOS.init();
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+        let followerX = 0, followerY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animate() {
+            // Cursor movement
+            cursorX += (mouseX - cursorX) * 0.1;
+            cursorY += (mouseY - cursorY) * 0.1;
+            cursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
+
+            // Follower movement
+            followerX += (mouseX - followerX) * 0.05;
+            followerY += (mouseY - followerY) * 0.05;
+            cursorFollower.style.transform = `translate(${followerX}px, ${followerY}px)`;
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // Cursor effects on hover
+        const hoverElements = document.querySelectorAll('a, button, .project-card, .internship-card');
+        hoverElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursor.classList.add('cursor-hover');
+                cursorFollower.classList.add('cursor-follower-hover');
+            });
+            element.addEventListener('mouseleave', () => {
+                cursor.classList.remove('cursor-hover');
+                cursorFollower.classList.remove('cursor-follower-hover');
+            });
+        });
+
+        // Loading Screen
+        window.addEventListener('load', () => {
+            document.querySelector('.loading').style.display = 'none';
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar Background on Scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(45, 52, 54, 0.95)';
+            } else {
+                navbar.style.background = 'transparent';
+            }
+        });
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Message sent successfully!');
+            this.reset();
+        });
     </script>
 </body>
 </html>
