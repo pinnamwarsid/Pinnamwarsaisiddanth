@@ -3,10 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Siddanth Pinnamwar - Portfolio</title>
+    <title>Welcome - Sai Siddanth Pinnamwar</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .landing {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, var(--primary), var(--dark));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .choice-container {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            z-index: 2;
+        }
+
+        .choice-card {
+            width: 300px;
+            padding: 2rem;
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(56, 189, 248, 0.1);
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .choice-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+        }
+
+        .choice-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .choice-title {
+            font-size: 1.5rem;
+            color: var(--light);
+            margin-bottom: 1rem;
+        }
+
+        .choice-description {
+            color: var(--text);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .welcome-text {
+            text-align: center;
+            margin-bottom: 2rem;
+            z-index: 2;
+        }
+
+        .welcome-title {
+            font-size: 3rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .welcome-subtitle {
+            color: var(--text);
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .choice-container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .choice-card {
+                width: 100%;
+            }
+
+            .welcome-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Custom Cursor -->
@@ -18,399 +111,36 @@
         <div class="loading-spinner"></div>
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-content">
-            <a href="#" class="logo">Siddanth</a>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="nav-links">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#internships" class="nav-link">Experience</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Floating Social Links -->
-    <div class="floating-socials">
-        <a href="https://www.linkedin.com/in/p-sai-siddanth-67aa81246" target="_blank" class="social-link">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/pinnamwarsid" target="_blank" class="social-link">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://drive.google.com/file/d/1cpYaRqvtA_fbgUWLAhsRPQg4jBnabYmu/view?usp=sharing" target="_blank" class="social-link">
-            <i class="fas fa-file-alt"></i>
-        </a>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Landing Section -->
+    <section class="landing">
         <div class="galaxy-background">
             <div class="nebula"></div>
             <div class="stars"></div>
         </div>
-        <div class="hero-content">
-            <h1 class="hero-title" data-text="Sai Siddanth Pinnamwar">Sai Siddanth Pinnamwar</h1>
-            <p class="hero-subtitle">Data-Driven Developer | Python & SQL Enthusiast</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">
-                    <i class="fas fa-envelope"></i>
-                    Get in Touch
-                </a>
-                <a href="https://drive.google.com/file/d/1cpYaRqvtA_fbgUWLAhsRPQg4jBnabYmu/view?usp=sharing" target="_blank" class="btn btn-secondary">
-                    <i class="fas fa-download"></i>
-                    Resume
-                </a>
-            </div>
+        
+        <div class="welcome-text">
+            <h1 class="welcome-title">Welcome to My Portfolio</h1>
+            <p class="welcome-subtitle">Please select your viewing preference</p>
+        </div>
+
+        <div class="choice-container">
+            <a href="professional.html" class="choice-card">
+                <i class="fas fa-briefcase choice-icon"></i>
+                <h2 class="choice-title">Professional View</h2>
+                <p class="choice-description">Tailored for recruiters and professionals. Focus on technical skills, work experience, and professional achievements.</p>
+                <button class="btn btn-primary">Enter Professional View</button>
+            </a>
+
+            <a href="general.html" class="choice-card">
+                <i class="fas fa-user choice-icon"></i>
+                <h2 class="choice-title">General View</h2>
+                <p class="choice-description">For general audience. A more personal perspective with focus on projects, interests, and creative work.</p>
+                <button class="btn btn-secondary">Enter General View</button>
+            </a>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-content">
-            <div class="about-text">
-                <h2 class="about-title">About Me</h2>
-                <p class="about-description">
-                    Innovative Computer Science Engineer with a strong foundation in data analysis, AI, and digital marketing. Proficient in Python, SQL, and data visualization tools. Experienced in developing interactive dashboards and AI-powered systems. Currently pursuing a Bachelor's in Computer Science. Skilled in problem-solving and delivering user-centric solutions. Passionate about leveraging technology to drive innovation and efficiency.
-                </p>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">7.66</div>
-                        <div class="stat-label">CGPA (Till VI SEM) </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">2025</div>
-                        <div class="stat-label">Graduation Year</div>
-                    </div>
-                </div>
-            </div>
-            <div class="about-image">
-                <img src="assets/profile.gif.jpg" alt="Profile" class="floating">
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="skills-content">
-            <h2 class="skills-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <!-- Programming Languages -->
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Programming Languages</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">SQL</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">HTML/CSS</span>
-                        <span class="skill-item">C++</span>
-                    </div>
-                </div>
-
-                <!-- Data Science & ML -->
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Data Science & ML</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Pandas</span>
-                        <span class="skill-item">NumPy</span>
-                        <span class="skill-item">Scikit-learn</span>
-                        <span class="skill-item">TensorFlow</span>
-                        <span class="skill-item">Machine Learning</span>
-                    </div>
-                </div>
-
-                <!-- Data Visualization -->
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Data Visualization</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Power BI</span>
-                        <span class="skill-item">Plotly</span>
-                        <span class="skill-item">Matplotlib</span>
-                        <span class="skill-item">Seaborn</span>
-                    </div>
-                </div>
-
-                <!-- Tools & Technologies -->
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Tools & Technologies</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">Flask</span>
-                        <span class="skill-item">MySQL</span>
-                        <span class="skill-item">PostgreSQL</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="projects-content">
-            <h2 class="projects-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Advanced Customer Segmentation -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Customer Segmentation" class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                                <a href="https://github.com/pinnamwarsid/Customer-Segmentation-Analysis.git" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Advanced Customer Segmentation</h3>
-                        <p class="project-description">
-                            Developed an advanced customer segmentation system using Python, implementing RFM analysis and K-means clustering to identify distinct customer segments.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Machine Learning</span>
-                            <span class="project-tag">Data Analysis</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Smart Traffic Surveillance -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Traffic Surveillance" class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                                <a href="https://github.com/pinnamwarsid/Smart-Traffic-Surveillance" class="project-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Smart Traffic Surveillance</h3>
-                        <p class="project-description">
-                            AI-powered helmet detection and license plate recognition system for enhanced traffic monitoring.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">OpenCV</span>
-                            <span class="project-tag">AI</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Interactive Data Dashboard -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Data Dashboard" class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                                <a href="https://github.com/pinnamwarsid/Data_analysis_dashboard.git" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Interactive Data Dashboard</h3>
-                        <p class="project-description">
-                            Real-time data visualization dashboard built with Flask and Plotly for dynamic data analysis.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">Flask</span>
-                            <span class="project-tag">Plotly</span>
-                            <span class="project-tag">SQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Retail Sales Forecasting -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sales Forecasting" class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                                <a href="https://github.com/pinnamwarsid/Retail_Sales_Forecasting" class="project-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Retail Sales Forecasting</h3>
-                        <p class="project-description">
-                            5-year trend analysis with Tableau visualization for retail sales prediction.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">Power BI</span>
-                            <span class="project-tag">Pandas</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pokemon Pokedex -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pokemon Pokedex" class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                                <a href="https://github.com/pinnamwarsid/pokemon-pokedex" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Pokemon Pokedex</h3>
-                        <p class="project-description">
-                            Comprehensive Pokemon analysis system utilizing CNN for image processing, advanced data cleaning techniques, and interactive visualizations to analyze Pokemon characteristics and battle statistics.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">CNN</span>
-                            <span class="project-tag">Data Visualization</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- E-commerce Customer Segmentation -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="E-commerce Analysis" class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                                <a href="https://github.com/pinnamwarsid/E-commerce-Customer-Segmentation" class="project-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">E-commerce Customer Segmentation</h3>
-                        <p class="project-description">
-                            RFM analysis and Power BI dashboard for customer segmentation.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">Power BI</span>
-                            <span class="project-tag">Excel</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Internships Section -->
-    <section id="internships" class="internships">
-        <div class="internships-content">
-            <h2 class="internships-title">Internship Experience</h2>
-            <div class="internships-grid">
-                <!-- Data Management Intern -->
-                <div class="internship-card">
-                    <div class="internship-content">
-                        <h3 class="internship-title">Data Management Intern</h3>
-                        <p class="internship-company">COSMIC365, Hyderabad</p>
-                        <p class="internship-period">Apr 2024 - Jun 2024</p>
-                        <ul class="internship-details">
-                            <li>Utilized Power BI and SQL to design interactive dashboards for tracking key business metrics</li>
-                            <li>Awarded a $600 scholarship for outstanding performance</li>
-                            <li>Collaborated with international teams across 32 verticals and 65 countries</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Compiler Engineering Intern -->
-                <div class="internship-card">
-                    <div class="internship-content">
-                        <h3 class="internship-title">Compiler Engineering Research Intern</h3>
-                        <p class="internship-company">TensorGrad, Chennai</p>
-                        <p class="internship-period">Nov 2024 - Jan 2025</p>
-                        <ul class="internship-details">
-                            <li>Optimized data processing algorithms to enhance system performance by 30%</li>
-                            <li>Documented research findings and contributed to knowledge transfer through structured reports</li>
-                            <li>Conducted quantitative analysis and implemented strategies to improve computational efficiency</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Research Analyst -->
-                <div class="internship-card">
-                    <div class="internship-content">
-                        <h3 class="internship-title">Research Analyst</h3>
-                        <p class="internship-company">BigBulls, Hyderabad</p>
-                        <p class="internship-period">Nov 2024 - Feb 2025</p>
-                        <ul class="internship-details">
-                            <li>Conducted financial and market research by analyzing data from 5 financial reports and 3 industry publications</li>
-                            <li>Prepared detailed research reports and visual aids</li>
-                            <li>Collaborated with senior analysts on market research</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Marketing Intern -->
-                <div class="internship-card">
-                    <div class="internship-content">
-                        <h3 class="internship-title">Marketing Intern</h3>
-                        <p class="internship-company">RPA Info Tech, Hyderabad</p>
-                        <p class="internship-period">Nov 2024 - Present</p>
-                        <ul class="internship-details">
-                            <li>Analyzed HubSpot CRM data for campaign performance</li>
-                            <li>Optimized lead generation strategies using engagement metrics</li>
-                            <li>Collaborated with sales teams to refine outreach strategies</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact-content">
-            <h2 class="contact-title">Let's Connect</h2>
-            <form id="contactForm" class="contact-form">
-                <input type="text" placeholder="Your Name" class="form-input" required>
-                <input type="email" placeholder="Email Address" class="form-input" required>
-                <textarea placeholder="Your Message" class="form-input form-textarea" required></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/p-sai-siddanth-67aa81246" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/pinnamwarsid" target="_blank" class="social-link">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2024 Sai Siddanth Pinnamwar. All rights reserved.</p>
-    </footer>
 
     <script>
-        // Mobile Menu Toggle
-        const menuBtn = document.querySelector('.menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        
-        menuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close menu when clicking a link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
         // Cursor animation
         const cursor = document.querySelector('.cursor');
         const cursorFollower = document.querySelector('.cursor-follower');
@@ -427,7 +157,6 @@
             mouseX = e.clientX;
             mouseY = e.clientY;
             
-            // Update cursor position immediately
             cursor.style.transform = `translate3d(${mouseX - cursor.offsetWidth / 2}px, ${mouseY - cursor.offsetHeight / 2}px, 0)`;
             
             if (!isMoving) {
@@ -437,7 +166,6 @@
         });
 
         function animateFollower() {
-            // Smooth follower movement
             const dx = mouseX - followerX;
             const dy = mouseY - followerY;
             
@@ -446,7 +174,6 @@
             
             cursorFollower.style.transform = `translate3d(${followerX - cursorFollower.offsetWidth / 2}px, ${followerY - cursorFollower.offsetHeight / 2}px, 0)`;
 
-            // Only continue animation if there's significant movement
             if (Math.abs(dx) > 0.1 || Math.abs(dy) > 0.1) {
                 rafId = requestAnimationFrame(animateFollower);
             } else {
@@ -454,82 +181,12 @@
             }
         }
 
-        // Optimize hover effects
-        const links = document.querySelectorAll('a, button, .project-card');
-        links.forEach(link => {
-            link.addEventListener('mouseenter', () => {
-                cursor.classList.add('cursor-hover');
-                cursorFollower.classList.add('cursor-follower-hover');
-            });
-            
-            link.addEventListener('mouseleave', () => {
-                cursor.classList.remove('cursor-hover');
-                cursorFollower.classList.remove('cursor-follower-hover');
-            });
-        });
-
-        // Hide cursor when leaving window
-        document.addEventListener('mouseleave', () => {
-            cursor.style.display = 'none';
-            cursorFollower.style.display = 'none';
-        });
-
-        document.addEventListener('mouseenter', () => {
-            cursor.style.display = 'block';
-            cursorFollower.style.display = 'block';
-        });
-
         // Loading Screen
         window.addEventListener('load', () => {
             document.querySelector('.loading').style.display = 'none';
         });
 
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Navbar Background on Scroll
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(45, 52, 54, 0.95)';
-            } else {
-                navbar.style.background = 'transparent';
-            }
-        });
-
-        // Form Submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Add your form submission logic here
-            alert('Message sent successfully!');
-            this.reset();
-        });
-
-        // Responsive Social Links
-        const floatingSocials = document.querySelector('.floating-socials');
-        function updateSocialsPosition() {
-            if (window.innerWidth <= 768) {
-                floatingSocials.style.bottom = '2rem';
-                floatingSocials.style.right = '50%';
-                floatingSocials.style.transform = 'translateX(50%)';
-            } else {
-                floatingSocials.style.bottom = 'auto';
-                floatingSocials.style.right = '2rem';
-                floatingSocials.style.transform = 'translateY(-50%)';
-            }
-        }
-
-        window.addEventListener('resize', updateSocialsPosition);
-        updateSocialsPosition();
-
-        // Add this after your existing script code
+        // Create stars
         function createStars() {
             const stars = document.querySelector('.stars');
             const numStars = 200;
@@ -544,34 +201,9 @@
                 star.style.setProperty('--twinkle-duration', Math.random() * 3 + 2 + 's');
                 stars.appendChild(star);
             }
-
-            // Add shooting stars
-            setInterval(() => {
-                const shootingStar = document.createElement('div');
-                shootingStar.className = 'shooting-star';
-                shootingStar.style.left = Math.random() * 100 + '%';
-                shootingStar.style.top = Math.random() * 100 + '%';
-                shootingStar.style.setProperty('--shooting-duration', Math.random() * 2 + 1 + 's');
-                stars.appendChild(shootingStar);
-                
-                setTimeout(() => {
-                    shootingStar.remove();
-                }, 3000);
-            }, 4000);
         }
 
-        // Initialize stars
         createStars();
-
-        // Add nav link for Skills section
-        const navLinksContainer = document.querySelector('.nav-links');
-        const skillsLink = document.createElement('a');
-        skillsLink.href = '#skills';
-        skillsLink.className = 'nav-link';
-        skillsLink.textContent = 'Skills';
-        navLinksContainer.insertBefore(skillsLink, document.querySelector('a[href="#projects"]'));
     </script>
-    <script src="script.js"></script>
-    <script src="background.js"></script>
 </body>
 </html>
