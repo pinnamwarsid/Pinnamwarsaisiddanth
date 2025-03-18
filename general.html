@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Siddanth Pinnamwar - Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="#" class="logo">Siddanth</a>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#interests" class="nav-link">Interests</a>
+                <a href="#projects" class="nav-link">Creative Work</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="professional.html" class="nav-link special">Professional View</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Social Links -->
+    <div class="floating-socials">
+        <a href="https://www.linkedin.com/in/p-sai-siddanth-67aa81246" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/pinnamwarsid" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="galaxy-background">
+            <div class="nebula"></div>
+            <div class="stars"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-text="Hello, I'm Siddanth">Hello, I'm Siddanth</h1>
+            <p class="hero-subtitle">Tech Enthusiast | Creative Coder | Data Storyteller</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i>
+                    View My Work
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <i class="fas fa-user"></i>
+                    Get to Know Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="about-title">My Story</h2>
+                <p class="about-description">
+                    Hey there! I'm a Computer Science student with a passion for turning data into meaningful stories. When I'm not coding, you'll find me exploring the latest tech trends, experimenting with AI art, or working on personal coding projects that combine creativity with technology.
+                    <br><br>
+                    I believe in the power of technology to create meaningful experiences and solve real-world problems. My journey in tech started with simple Python scripts and has evolved into a fascinating exploration of AI, data visualization, and creative coding.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Personal Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1+</div>
+                        <div class="stat-label">Years Coding</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="assets/2.jpg" alt="Profile" class="floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="skills">
+        <div class="skills-content">
+            <h2 class="skills-title">What Drives Me</h2>
+            <div class="skills-grid">
+                <!-- AI & Machine Learning -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">AI & Machine Learning</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">ChatGpt</span>
+                        <span class="skill-item">Qwen</span>
+                        <span class="skill-item">Open AI</span>
+                        <span class="skill-item">Midjourney</span>
+                    </div>
+                </div>
+
+                <!-- Creative Coding -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Creative Coding</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Generative Art</span>
+                        <span class="skill-item">Data Visualization</span>
+                        <span class="skill-item">Interactive Design</span>
+                        <span class="skill-item">Processing</span>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Data Science</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Data Storytelling</span>
+                        <span class="skill-item">Statistical Analysis</span>
+                        <span class="skill-item">Data Visualization</span>
+                        <span class="skill-item">Predictive Modeling</span>
+                    </div>
+                </div>
+
+                <!-- Other Interests -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Other Interests</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Tech Writing</span>
+                        <span class="skill-item">Open Source</span>
+                        <span class="skill-item">UI/UX Design</span>
+                        <span class="skill-item">Digital Art</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="projects-content">
+            <h2 class="projects-title">Creative Projects</h2>
+            <div class="projects-grid">
+                <!-- Pokemon Data Art -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pokemon Data Art" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/pinnamwarsid/pokemon-pokedex" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Pokemon Data Art</h3>
+                        <p class="project-description">
+                            A creative visualization project that turns Pokemon data into beautiful, interactive art pieces. Exploring the intersection of gaming, data, and visual aesthetics.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Data Art</span>
+                            <span class="project-tag">Interactive</span>
+                            <span class="project-tag">Gaming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Art Gallery -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="AI Art" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Art Gallery</h3>
+                        <p class="project-description">
+                            Exploring the creative possibilities of AI in art generation. A collection of AI-generated artwork using various machine learning models and techniques.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">AI</span>
+                            <span class="project-tag">Art</span>
+                            <span class="project-tag">Creative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Stories -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Data Stories" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Data Stories</h3>
+                        <p class="project-description">
+                            A collection of interactive data visualizations that tell compelling stories about various topics, from climate change to social media trends.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Storytelling</span>
+                            <span class="project-tag">Visualization</span>
+                            <span class="project-tag">Interactive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="internships">
+        <div class="internships-content">
+            <h2 class="internships-title">Blog & Thoughts</h2>
+            <div class="internships-grid">
+                <!-- Blog Post 1 -->
+                <div class="internship-card">
+                    <div class="internship-content">
+                        <h3 class="internship-title">The Art of Data Visualization</h3>
+                        <p class="internship-company">Tech & Creativity</p>
+                        <p class="internship-period">March 2024</p>
+                        <p class="internship-description">
+                            Exploring how data visualization can be both informative and aesthetically pleasing. A deep dive into creating meaningful visual representations of complex data.
+                        </p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="internship-card">
+                    <div class="internship-content">
+                        <h3 class="internship-title">AI in Creative Coding</h3>
+                        <p class="internship-company">AI & Art</p>
+                        <p class="internship-period">February 2024</p>
+                        <p class="internship-description">
+                            How artificial intelligence is revolutionizing creative coding and opening new possibilities for digital art and interactive experiences.
+                        </p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="internship-card">
+                    <div class="internship-content">
+                        <h3 class="internship-title">My Journey in Tech</h3>
+                        <p class="internship-company">Personal Story</p>
+                        <p class="internship-period">January 2024</p>
+                        <p class="internship-description">
+                            From writing my first line of code to exploring the vast world of data science and AI - a personal reflection on my tech journey.
+                        </p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2 class="contact-title">Let's Connect</h2>
+            <form id="contactForm" class="contact-form">
+                <input type="text" placeholder="Your Name" class="form-input" required>
+                <input type="email" placeholder="Email Address" class="form-input" required>
+                <textarea placeholder="Your Message" class="form-input form-textarea" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/p-sai-siddanth-67aa81246" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/pinnamwarsid" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Sai Siddanth Pinnamwar. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Cursor animation
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+        let isMoving = false;
+        let rafId = null;
+        let mouseX = 0;
+        let mouseY = 0;
+        let cursorX = 0;
+        let cursorY = 0;
+        let followerX = 0;
+        let followerY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            cursor.style.transform = `translate3d(${mouseX - cursor.offsetWidth / 2}px, ${mouseY - cursor.offsetHeight / 2}px, 0)`;
+            
+            if (!isMoving) {
+                isMoving = true;
+                animateFollower();
+            }
+        });
+
+        function animateFollower() {
+            const dx = mouseX - followerX;
+            const dy = mouseY - followerY;
+            
+            followerX += dx * 0.15;
+            followerY += dy * 0.15;
+            
+            cursorFollower.style.transform = `translate3d(${followerX - cursorFollower.offsetWidth / 2}px, ${followerY - cursorFollower.offsetHeight / 2}px, 0)`;
+
+            if (Math.abs(dx) > 0.1 || Math.abs(dy) > 0.1) {
+                rafId = requestAnimationFrame(animateFollower);
+            } else {
+                isMoving = false;
+            }
+        }
+
+        // Loading Screen
+        window.addEventListener('load', () => {
+            document.querySelector('.loading').style.display = 'none';
+        });
+
+        // Create stars
+        function createStars() {
+            const stars = document.querySelector('.stars');
+            if (stars) {
+                const numStars = 200;
+                
+                for (let i = 0; i < numStars; i++) {
+                    const star = document.createElement('div');
+                    star.className = 'star';
+                    star.style.width = Math.random() * 3 + 'px';
+                    star.style.height = star.style.width;
+                    star.style.left = Math.random() * 100 + '%';
+                    star.style.top = Math.random() * 100 + '%';
+                    star.style.setProperty('--twinkle-duration', Math.random() * 3 + 2 + 's');
+                    stars.appendChild(star);
+                }
+            }
+        }
+
+        // Initialize effects
+        document.addEventListener('DOMContentLoaded', () => {
+            createStars();
+            
+            // Add hover effects for links and buttons
+            const interactiveElements = document.querySelectorAll('a, button, .project-card');
+            interactiveElements.forEach(element => {
+                element.addEventListener('mouseenter', () => {
+                    cursor.classList.add('cursor-hover');
+                    cursorFollower.classList.add('cursor-follower-hover');
+                });
+                
+                element.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('cursor-hover');
+                    cursorFollower.classList.remove('cursor-follower-hover');
+                });
+            });
+
+            // Mobile menu toggle
+            const menuBtn = document.querySelector('.menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+    <script src="background.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("YOUR_USER_ID");
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
