@@ -3,103 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome - Sai Siddanth Pinnamwar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Choose Your View</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .landing {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(45deg, var(--primary), var(--dark));
-            position: relative;
-            overflow: hidden;
-        }
-
-        .choice-container {
-            display: flex;
-            gap: 2rem;
-            margin-top: 2rem;
-            z-index: 2;
-        }
-
-        .choice-card {
-            width: 300px;
-            padding: 2rem;
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(56, 189, 248, 0.1);
-            border-radius: 15px;
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .choice-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--neon-blue);
-            box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
-        }
-
-        .choice-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .choice-title {
-            font-size: 1.5rem;
-            color: var(--light);
-            margin-bottom: 1rem;
-        }
-
-        .choice-description {
-            color: var(--text);
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .welcome-text {
-            text-align: center;
-            margin-bottom: 2rem;
-            z-index: 2;
-        }
-
-        .welcome-title {
-            font-size: 3rem;
-            font-weight: 700;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
-        }
-
-        .welcome-subtitle {
-            color: var(--text);
-            font-size: 1.2rem;
-        }
-
-        @media (max-width: 768px) {
-            .choice-container {
-                flex-direction: column;
-                padding: 1rem;
-            }
-
-            .choice-card {
-                width: 100%;
-            }
-
-            .welcome-title {
-                font-size: 2rem;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Custom Cursor -->
@@ -120,26 +27,31 @@
         
         <div class="welcome-text">
             <h1 class="welcome-title">Welcome to My Portfolio</h1>
-            <p class="welcome-subtitle">Please select your viewing preference</p>
+            <p class="welcome-subtitle">Choose your preferred viewing experience</p>
         </div>
 
-        <div class="choice-container">
-            <a href="professional.html" class="choice-card">
-                <i class="fas fa-briefcase choice-icon"></i>
-                <h2 class="choice-title">Professional View</h2>
-                <p class="choice-description">Tailored for recruiters and professionals. Focus on technical skills, work experience, and professional achievements.</p>
-                <button class="btn btn-primary">Enter Professional View</button>
+        <div class="view-options">
+            <a href="professional.html" class="view-card">
+                <div class="view-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h2>Professional View</h2>
+                
             </a>
 
-            <a href="general.html" class="choice-card">
-                <i class="fas fa-user choice-icon"></i>
-                <h2 class="choice-title">General View</h2>
-                <p class="choice-description">For general audience. A more personal perspective with focus on projects, interests, and creative work.</p>
-                <button class="btn btn-secondary">Enter General View</button>
+            <a href="general.html" class="view-card">
+                <div class="view-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h2>General View</h2>
+                
             </a>
         </div>
     </section>
 
+    <!-- Scripts -->
+    <script src="background.js"></script>
+    <script src="script.js"></script>
     <script>
         // Cursor animation
         const cursor = document.querySelector('.cursor');
@@ -183,27 +95,48 @@
 
         // Loading Screen
         window.addEventListener('load', () => {
-            document.querySelector('.loading').style.display = 'none';
+            setTimeout(() => {
+                document.querySelector('.loading').style.opacity = '0';
+                setTimeout(() => {
+                    document.querySelector('.loading').style.display = 'none';
+                }, 500);
+            }, 1000);
         });
 
         // Create stars
-        function createStars() {
-            const stars = document.querySelector('.stars');
-            const numStars = 200;
+        function createStar() {
+            const star = document.createElement('div');
+            star.className = 'star';
             
-            for (let i = 0; i < numStars; i++) {
-                const star = document.createElement('div');
-                star.className = 'star';
-                star.style.width = Math.random() * 3 + 'px';
-                star.style.height = star.style.width;
-                star.style.left = Math.random() * 100 + '%';
-                star.style.top = Math.random() * 100 + '%';
-                star.style.setProperty('--twinkle-duration', Math.random() * 3 + 2 + 's');
-                stars.appendChild(star);
-            }
+            // Random size between 1-3px
+            const size = Math.random() * 2 + 1;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            
+            // Random starting position
+            star.style.left = `${Math.random() * 100}%`;
+            
+            // Random horizontal offset for falling motion
+            const xOffset = (Math.random() - 0.5) * 100;
+            star.style.setProperty('--x-offset', `${xOffset}px`);
+            
+            // Random duration between 3-7 seconds
+            const duration = Math.random() * 4 + 3;
+            star.style.setProperty('--twinkle-duration', `${duration}s`);
+            
+            // Random delay
+            star.style.animationDelay = `${Math.random() * 5}s`;
+            
+            document.querySelector('.stars').appendChild(star);
+            
+            // Remove star after animation
+            star.addEventListener('animationend', () => {
+                star.remove();
+            });
         }
 
-        createStars();
+        // Create stars periodically
+        setInterval(createStar, 300);
     </script>
 </body>
 </html>

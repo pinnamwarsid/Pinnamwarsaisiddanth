@@ -66,4 +66,35 @@ document.addEventListener('visibilitychange', () => {
     } else {
         document.body.classList.remove('pause-animations');
     }
-}); 
+});
+
+function createStar() {
+    const star = document.createElement('div');
+    star.className = 'star';
+    
+    // Random size between 1-3px
+    const size = Math.random() * 2 + 1;
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+    
+    // Random starting position
+    star.style.left = `${Math.random() * 100}%`;
+    
+    // Random horizontal offset for falling motion
+    const xOffset = (Math.random() - 0.5) * 100; // Random offset between -50px and 50px
+    star.style.setProperty('--x-offset', `${xOffset}px`);
+    
+    // Random duration between 3-7 seconds
+    const duration = Math.random() * 4 + 3;
+    star.style.setProperty('--twinkle-duration', `${duration}s`);
+    
+    // Random delay
+    star.style.animationDelay = `${Math.random() * 5}s`;
+    
+    stars.appendChild(star);
+    
+    // Remove star after animation
+    star.addEventListener('animationend', () => {
+        star.remove();
+    });
+} 
