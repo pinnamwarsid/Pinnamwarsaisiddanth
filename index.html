@@ -22,8 +22,12 @@
     <nav class="navbar">
         <div class="navbar-content">
             <a href="#" class="logo">Siddanth</a>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
             <div class="nav-links">
                 <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#internships" class="nav-link">Experience</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -31,14 +35,37 @@
         </div>
     </nav>
 
+    <!-- Floating Social Links -->
+    <div class="floating-socials">
+        <a href="https://www.linkedin.com/in/p-sai-siddanth-67aa81246" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/pinnamwarsid" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://drive.google.com/file/d/1cpYaRqvtA_fbgUWLAhsRPQg4jBnabYmu/view?usp=sharing" target="_blank" class="social-link">
+            <i class="fas fa-file-alt"></i>
+        </a>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
+        <div class="galaxy-background">
+            <div class="nebula"></div>
+            <div class="stars"></div>
+        </div>
         <div class="hero-content">
-            <h1 class="hero-title">Sai Siddanth Pinnamwar</h1>
+            <h1 class="hero-title" data-text="Sai Siddanth Pinnamwar">Sai Siddanth Pinnamwar</h1>
             <p class="hero-subtitle">Data-Driven Developer | Python & SQL Enthusiast</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                <a href="https://drive.google.com/file/d/1cpYaRqvtA_fbgUWLAhsRPQg4jBnabYmu/view?usp=sharing" target="_blank" class="btn btn-secondary">Download Resume</a>
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Get in Touch
+                </a>
+                <a href="https://drive.google.com/file/d/1cpYaRqvtA_fbgUWLAhsRPQg4jBnabYmu/view?usp=sharing" target="_blank" class="btn btn-secondary">
+                    <i class="fas fa-download"></i>
+                    Resume
+                </a>
             </div>
         </div>
     </section>
@@ -68,6 +95,60 @@
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="skills-content">
+            <h2 class="skills-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">HTML/CSS</span>
+                        <span class="skill-item">C++</span>
+                    </div>
+                </div>
+
+                <!-- Data Science & ML -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Data Science & ML</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Pandas</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">Scikit-learn</span>
+                        <span class="skill-item">TensorFlow</span>
+                        <span class="skill-item">Machine Learning</span>
+                    </div>
+                </div>
+
+                <!-- Data Visualization -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Data Visualization</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Power BI</span>
+                        <span class="skill-item">Plotly</span>
+                        <span class="skill-item">Matplotlib</span>
+                        <span class="skill-item">Seaborn</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools & Technologies</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Flask</span>
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="projects-content">
@@ -76,7 +157,7 @@
                 <!-- Advanced Customer Segmentation -->
                 <div class="project-card">
                     <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Data Analysis Project" class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Customer Segmentation" class="project-image">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fas fa-link"></i></a>
@@ -101,7 +182,7 @@
                 <!-- Smart Traffic Surveillance -->
                 <div class="project-card">
                     <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Traffic Project" class="project-image">
+                        <img src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Traffic Surveillance" class="project-image">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fas fa-link"></i></a>
@@ -126,7 +207,7 @@
                 <!-- Interactive Data Dashboard -->
                 <div class="project-card">
                     <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dashboard" class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Data Dashboard" class="project-image">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fas fa-link"></i></a>
@@ -151,7 +232,7 @@
                 <!-- Retail Sales Forecasting -->
                 <div class="project-card">
                     <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sales Analysis" class="project-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sales Forecasting" class="project-image">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fas fa-link"></i></a>
@@ -172,10 +253,35 @@
                     </div>
                 </div>
 
+                <!-- Pokemon Pokedex -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pokemon Pokedex" class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/pinnamwarsid/pokemon-pokedex" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Pokemon Pokedex</h3>
+                        <p class="project-description">
+                            Comprehensive Pokemon analysis system utilizing CNN for image processing, advanced data cleaning techniques, and interactive visualizations to analyze Pokemon characteristics and battle statistics.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">CNN</span>
+                            <span class="project-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- E-commerce Customer Segmentation -->
                 <div class="project-card">
                     <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="RFM Analysis" class="project-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="E-commerce Analysis" class="project-image">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fas fa-link"></i></a>
@@ -202,7 +308,7 @@
     <!-- Internships Section -->
     <section id="internships" class="internships">
         <div class="internships-content">
-            <h2 class="internships-title">Professional Experience</h2>
+            <h2 class="internships-title">Internship Experience</h2>
             <div class="internships-grid">
                 <!-- Data Management Intern -->
                 <div class="internship-card">
@@ -290,45 +396,87 @@
     </footer>
 
     <script>
-        // Custom Cursor
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Cursor animation
         const cursor = document.querySelector('.cursor');
         const cursorFollower = document.querySelector('.cursor-follower');
-        let mouseX = 0, mouseY = 0;
-        let cursorX = 0, cursorY = 0;
-        let followerX = 0, followerY = 0;
+        let isMoving = false;
+        let rafId = null;
+        let mouseX = 0;
+        let mouseY = 0;
+        let cursorX = 0;
+        let cursorY = 0;
+        let followerX = 0;
+        let followerY = 0;
 
         document.addEventListener('mousemove', (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
+            
+            // Update cursor position immediately
+            cursor.style.transform = `translate3d(${mouseX - cursor.offsetWidth / 2}px, ${mouseY - cursor.offsetHeight / 2}px, 0)`;
+            
+            if (!isMoving) {
+                isMoving = true;
+                animateFollower();
+            }
         });
 
-        function animate() {
-            // Cursor movement
-            cursorX += (mouseX - cursorX) * 0.1;
-            cursorY += (mouseY - cursorY) * 0.1;
-            cursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
+        function animateFollower() {
+            // Smooth follower movement
+            const dx = mouseX - followerX;
+            const dy = mouseY - followerY;
+            
+            followerX += dx * 0.15;
+            followerY += dy * 0.15;
+            
+            cursorFollower.style.transform = `translate3d(${followerX - cursorFollower.offsetWidth / 2}px, ${followerY - cursorFollower.offsetHeight / 2}px, 0)`;
 
-            // Follower movement
-            followerX += (mouseX - followerX) * 0.05;
-            followerY += (mouseY - followerY) * 0.05;
-            cursorFollower.style.transform = `translate(${followerX}px, ${followerY}px)`;
-
-            requestAnimationFrame(animate);
+            // Only continue animation if there's significant movement
+            if (Math.abs(dx) > 0.1 || Math.abs(dy) > 0.1) {
+                rafId = requestAnimationFrame(animateFollower);
+            } else {
+                isMoving = false;
+            }
         }
 
-        animate();
-
-        // Cursor effects on hover
-        const hoverElements = document.querySelectorAll('a, button, .project-card, .internship-card');
-        hoverElements.forEach(element => {
-            element.addEventListener('mouseenter', () => {
+        // Optimize hover effects
+        const links = document.querySelectorAll('a, button, .project-card');
+        links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
                 cursor.classList.add('cursor-hover');
                 cursorFollower.classList.add('cursor-follower-hover');
             });
-            element.addEventListener('mouseleave', () => {
+            
+            link.addEventListener('mouseleave', () => {
                 cursor.classList.remove('cursor-hover');
                 cursorFollower.classList.remove('cursor-follower-hover');
             });
+        });
+
+        // Hide cursor when leaving window
+        document.addEventListener('mouseleave', () => {
+            cursor.style.display = 'none';
+            cursorFollower.style.display = 'none';
+        });
+
+        document.addEventListener('mouseenter', () => {
+            cursor.style.display = 'block';
+            cursorFollower.style.display = 'block';
         });
 
         // Loading Screen
@@ -363,6 +511,67 @@
             alert('Message sent successfully!');
             this.reset();
         });
+
+        // Responsive Social Links
+        const floatingSocials = document.querySelector('.floating-socials');
+        function updateSocialsPosition() {
+            if (window.innerWidth <= 768) {
+                floatingSocials.style.bottom = '2rem';
+                floatingSocials.style.right = '50%';
+                floatingSocials.style.transform = 'translateX(50%)';
+            } else {
+                floatingSocials.style.bottom = 'auto';
+                floatingSocials.style.right = '2rem';
+                floatingSocials.style.transform = 'translateY(-50%)';
+            }
+        }
+
+        window.addEventListener('resize', updateSocialsPosition);
+        updateSocialsPosition();
+
+        // Add this after your existing script code
+        function createStars() {
+            const stars = document.querySelector('.stars');
+            const numStars = 200;
+            
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.width = Math.random() * 3 + 'px';
+                star.style.height = star.style.width;
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.setProperty('--twinkle-duration', Math.random() * 3 + 2 + 's');
+                stars.appendChild(star);
+            }
+
+            // Add shooting stars
+            setInterval(() => {
+                const shootingStar = document.createElement('div');
+                shootingStar.className = 'shooting-star';
+                shootingStar.style.left = Math.random() * 100 + '%';
+                shootingStar.style.top = Math.random() * 100 + '%';
+                shootingStar.style.setProperty('--shooting-duration', Math.random() * 2 + 1 + 's');
+                stars.appendChild(shootingStar);
+                
+                setTimeout(() => {
+                    shootingStar.remove();
+                }, 3000);
+            }, 4000);
+        }
+
+        // Initialize stars
+        createStars();
+
+        // Add nav link for Skills section
+        const navLinksContainer = document.querySelector('.nav-links');
+        const skillsLink = document.createElement('a');
+        skillsLink.href = '#skills';
+        skillsLink.className = 'nav-link';
+        skillsLink.textContent = 'Skills';
+        navLinksContainer.insertBefore(skillsLink, document.querySelector('a[href="#projects"]'));
     </script>
+    <script src="script.js"></script>
+    <script src="background.js"></script>
 </body>
 </html>
